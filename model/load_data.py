@@ -48,6 +48,7 @@ def doc_array(file,doc_max_len):
     for doc in doc2content.keys():
         doc_array[doc] = doc2content[doc]
 
-    f = open('doc_array', 'wb')
-    pickle.dump(doc_array, f)
-    f.close()
+    return doc_array
+    #f = open('doc_array', 'wb')
+    #pickle.dump(doc_array, f)
+    #f.close()
